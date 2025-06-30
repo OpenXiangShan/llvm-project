@@ -21,7 +21,7 @@ CodeGenOptions::CodeGenOptions() {
 #define ENUM_CODEGENOPT(Name, Type, Bits, Default) set##Name(Default);
 #include "flang/Frontend/CodeGenOptions.def"
 }
-
+//fanyikang
 std::optional<llvm::CodeModel::Model> getCodeModel(llvm::StringRef string) {
   return llvm::StringSwitch<std::optional<llvm::CodeModel::Model>>(string)
       .Case("tiny", llvm::CodeModel::Model::Tiny)
